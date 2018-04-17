@@ -18,7 +18,7 @@
 <meta property="og:description" content="Android + NDK + Boost (using CMake) &amp;ensp; 안드로이드 네이티브 프로그래밍을 하다보면 Boost의 강력한 기능이 필요한 경우가 종종 발생한다. 특히 네이티브 레벨에서 직렬화(Serialization)를 수월하게 수행하기 위해서는 Boost의 serialization 라이브러리가 매우 유용하다. 구글링을 통해서 Boost 포팅">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/180418/001.png">
-<meta property="og:updated_time" content="2018-04-17T16:53:11.000Z">
+<meta property="og:updated_time" content="2018-04-17T16:55:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android에서 Boost 라이브러리 사용하기 (CMake 빌드)">
 <meta name="twitter:description" content="Android + NDK + Boost (using CMake) &amp;ensp; 안드로이드 네이티브 프로그래밍을 하다보면 Boost의 강력한 기능이 필요한 경우가 종종 발생한다. 특히 네이티브 레벨에서 직렬화(Serialization)를 수월하게 수행하기 위해서는 Boost의 serialization 라이브러리가 매우 유용하다. 구글링을 통해서 Boost 포팅">
@@ -185,9 +185,7 @@
 <blockquote>
 <p><strong>코드 실행 시 주의사항</strong></p>
 <p>위 예제는 디바이스에 파일을 저장하고 읽기 때문에 관련된 권한을 설정해야 합니다. AndroidManifest.xml 파일에 아래와 같은 퍼미션을 작성합니다. </p>
-<blockquote>
-</blockquote>
-<p>\<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><br>\<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">  </uses-permission></uses-permission></p>
+<p><code>&lt;uses-permission android:name=&quot;android.permission.READ_EXTERNAL_STORAGE&quot;/&gt;</code><br><code>&lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;</code>  </p>
 <p>자동으로 권한을 묻는 코드를 작성하지 않았다면 수동으로 활성화해야 합니다.</p>
 </blockquote>
 <h2 id="샘플-프로젝트"><a href="#샘플-프로젝트" class="headerlink" title="샘플 프로젝트"></a>샘플 프로젝트</h2><p>&ensp; 본 튜토리얼에 대한 샘플 프로젝트는 다음 <a href="https://github.com/yhjeong89/BoostForAndroidSimpleExample" target="_blank" rel="noopener">링크</a>에 있다.</p>
@@ -318,17 +316,6 @@
     </div>
     
         
-<nav id="article-nav">
-    
-    
-        <a href="/2018/03/06/second-post/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">포스팅 수정 쉽구만</p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-        </a>
-    
-</nav>
-
     
     <div class="widgets-container">
         
@@ -359,66 +346,6 @@
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/03/06/second-post/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/Diary/">Diary</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Diary/일기/">일기</a></p>
-                            <p class="item-title"><a href="/2018/03/06/second-post/" class="title">포스팅 수정 쉽구만</a></p>
-                            <p class="item-date"><time datetime="2018-03-06T14:45:50.000Z" itemprop="datePublished">2018-03-06</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/03/06/github-page-and-hexo/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/03/06/github-page-and-hexo/" class="title">첫 글 테스트!</a></p>
-                            <p class="item-date"><time datetime="2018-03-05T16:08:10.000Z" itemprop="datePublished">2018-03-06</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2018/03/06/hello-world/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/03/06/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2018-03-05T15:43:17.000Z" itemprop="datePublished">2018-03-06</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -428,7 +355,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/일기/">일기</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Android/">Android</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/Android/">Android</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -438,7 +365,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">3</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -448,7 +375,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-NDK-Boost/">Android, NDK, Boost</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/잡담/">잡담</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/첫글/">첫글</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android-NDK-Boost/">Android, NDK, Boost</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -458,7 +385,7 @@
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Android-NDK-Boost/" style="font-size: 10px;">Android, NDK, Boost</a> <a href="/tags/잡담/" style="font-size: 10px;">잡담</a> <a href="/tags/첫글/" style="font-size: 10px;">첫글</a>
+            <a href="/tags/Android-NDK-Boost/" style="font-size: 10px;">Android, NDK, Boost</a>
         </div>
     </div>
 
