@@ -18,7 +18,7 @@
 <meta property="og:description" content="Android + NDK + Boost (using CMake) &amp;ensp; 안드로이드 네이티브 프로그래밍을 하다보면 Boost의 강력한 기능이 필요한 경우가 종종 발생한다. 특히 네이티브 레벨에서 직렬화(Serialization)를 수월하게 수행하기 위해서는 Boost의 serialization 라이브러리가 매우 유용하다. 구글링을 통해서 Boost 포팅">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/180418/001.png">
-<meta property="og:updated_time" content="2018-09-10T14:44:42.000Z">
+<meta property="og:updated_time" content="2018-09-10T14:49:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android에서 Boost 라이브러리 사용하기 (CMake 빌드) (Using Boost library on Android)">
 <meta name="twitter:description" content="Android + NDK + Boost (using CMake) &amp;ensp; 안드로이드 네이티브 프로그래밍을 하다보면 Boost의 강력한 기능이 필요한 경우가 종종 발생한다. 특히 네이티브 레벨에서 직렬화(Serialization)를 수월하게 수행하기 위해서는 Boost의 serialization 라이브러리가 매우 유용하다. 구글링을 통해서 Boost 포팅">
@@ -167,7 +167,7 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1 id="Android-NDK-Boost-using-CMake"><a href="#Android-NDK-Boost-using-CMake" class="headerlink" title="Android + NDK + Boost (using CMake)"></a>Android + NDK + Boost (using CMake)</h1><p> &ensp; 안드로이드 네이티브 프로그래밍을 하다보면 Boost의 강력한 기능이 필요한 경우가 종종 발생한다. 특히 네이티브 레벨에서 직렬화(Serialization)를 수월하게 수행하기 위해서는 Boost의 serialization 라이브러리가 매우 유용하다. 구글링을 통해서 Boost 포팅 방법을 검색하면 대체로 ndk-build 방식의 튜토리얼들만 볼 수 있다.<br> &ensp;(When you do programming using Android NDK, it needs powerful functions of Boost occasionally. Especially, Boost serialization library is helpful on native level serialization. If you need help and google, you will find many tutorials which use ndk-build method.)</p>
+            <h1 id="Android-NDK-Boost-using-CMake"><a href="#Android-NDK-Boost-using-CMake" class="headerlink" title="Android + NDK + Boost (using CMake)"></a>Android + NDK + Boost (using CMake)</h1><p> &ensp; 안드로이드 네이티브 프로그래밍을 하다보면 Boost의 강력한 기능이 필요한 경우가 종종 발생한다. 특히 네이티브 레벨에서 직렬화(Serialization)를 수월하게 수행하기 위해서는 Boost의 serialization 라이브러리가 매우 유용하다. 구글링을 통해서 Boost 포팅 방법을 검색하면 대체로 ndk-build 방식의 튜토리얼들만 볼 수 있다.<br> &ensp;(When you do programming using Android NDK, it needs powerful functions of Boost occasionally. Especially, Boost serialization library is helpful for native level serialization. If you need help and google, you just find many tutorials which use ndk-build method.)</p>
 <p>&ensp;그러나 Android Studio를 사용하는 입장에서 CMake 빌드 방식을 이용하여 네이티브 레벨 개발을 하면 편리한 점이 많다. 매번 ndk-build를 실행해 라이브러리 파일을 만들 필요가 없고 별다른 설정 없이도 C++ 코드도 실시간 문법 에러 체크, 자동완성 등의 이점을 볼 수 있기 때문에 CMake 방식에 익숙해지는 것이 좋다. 본 포스팅에서는 CMake 빌드 환경에서 안드로이드 네이티브 프로그래밍 시 Boost를 사용하는 방법에 대한 튜토리얼을 진행한다.<br>&ensp;(If you use Android Studio, develpoing your C++ native Android application using CMake method is much convenient. You don’t have to execute ndk-build command everytime for generating library file (*.so) and it supports realtime grammer check with auto code completion system, so it will be helpful if you get in the swing using CMake build method. This post will show about porting Boost library on Android using CMake.)</p>
 <blockquote>
 <p><strong>튜토리얼 진행 환경 (Environment)</strong><br>IDE : Android Studio 3.0.1<br>SDK : min 15, target 26<br>NDK : android-ndk-r14b </p>
@@ -198,7 +198,7 @@
 
 
 
-    <a data-url="http://yoursite.com/2018/04/18/androidBoost/" data-id="cjlwbucw40000ee0m4pmgwusz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2018/04/18/androidBoost/" data-id="cjlwelw7z0000of0myvbc2rgq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
